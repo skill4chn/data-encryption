@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('suspension-bridge-over-river-in-modern-city-827441810-5c6d8016c9e77c0001efa086.jpg') center/cover no-repeat;
+    background-size:auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1 {
+    border-top: 0;
+    color:red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff5500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff5500;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #e44d00;
+}
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

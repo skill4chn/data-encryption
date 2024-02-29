@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Create User</title>
+</head>
+
+<body>
+    <h1>Welcome to Chongqing !</h1>
+    <h1>欢迎来到重庆 !</h1>
+
+    
+    <!-- Create User Form -->
+    <form action="{{ url_for('create_user_route') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Create User</button>
+    </form>
+
+    <!-- Login Link -->
+    <a href="#" id="login-link">Login</a>
+
+    <!-- Login Form (Initially Hidden) -->
+    <form action="{{ url_for('login_route') }}" method="post" id="login-form" style="display: none;">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="username" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form action="{{ url_for('create_user_route') }}" method="post" id="login-form" style="display: none;">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="username" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <script>
+        document.getElementById('login-link').addEventListener('click', function() {
+            var loginForm = document.getElementById('login-form');
+            loginForm.style.display = (loginForm.style.display === 'none' || loginForm.style.display === '') ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
